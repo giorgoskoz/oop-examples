@@ -22,6 +22,15 @@ public class Cart {
     }
 
     public double getTotal() {
+        if (owner instanceof UserUnderLoyalty) {
+            double sum = 0.0;
+        for (Product p : products) {
+            sum += p.getPrice();
+        }
+        sum -= sum * ((UserUnderLoyalty)owner).getDiscount();
+        return sum;
+        }
+        
         double sum = 0.0;
         for (Product p : products) {
             sum += p.getPrice();
