@@ -23,6 +23,7 @@ public class DrawingMain {
         d.selectLine(l7);
         
         d.alignSelectedLinesToTheLeft();
+        ((MyDrawing)d).printSelectedLines();
         
         /*
         d.selectLine(l2);
