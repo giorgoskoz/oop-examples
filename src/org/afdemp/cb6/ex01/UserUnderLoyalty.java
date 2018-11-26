@@ -44,5 +44,5 @@ public class UserUnderLoyalty extends User {
             return 0.07f;
         }
     }
-    
+    //???
 }
