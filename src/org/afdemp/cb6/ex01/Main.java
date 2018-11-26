@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Total = " + cart.getTotal());
         
         user = new UserUnderLoyalty(user, 100);
-        //how to update currently existing cart with updated UserUnderLoyalty user so the next 3 lines are not needed??
+        //how to update currently existing cart with updated UserUnderLoyalty user so the next 3 lines are not needed???
         cart.setUser(user);
 //        cart.add(new Product("P001", "Mouse",    12.00));
 //        cart.add(new Product("P002", "Keyboard", 14.00));
