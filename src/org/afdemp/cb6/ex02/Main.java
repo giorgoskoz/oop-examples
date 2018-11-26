@@ -14,6 +14,9 @@ public class Main {
 
         SuperPrinter sp2 = new SuperPrinter(false);
         sp2.print(message);
+        
+        //can't see shit captain
+        
     }
 
 }
