@@ -71,5 +71,19 @@ public class MyDrawing extends Drawing {
             super(f, s);
             isSelected = selected;
         }
+        
+        public boolean getIsSelected() {
+            return isSelected;
+        }
+    }
+    
+    public void printSelectedLines() {
+        for (Line line : lines) {
+            if ((line instanceof InnerSelectableLine) && (((InnerSelectableLine)line).getIsSelected())) {
+                System.out.println(line);
+            }
+                
+        }
+        
     }
 }
