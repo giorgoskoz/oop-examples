@@ -20,6 +20,10 @@ public class Cart {
     public void remove(Product p) {
         products.remove(p);
     }
+    
+    public void setUser(User owner) {
+        this.owner = owner;
+    }
 
     public double getTotal() {
         if (owner instanceof UserUnderLoyalty) {
